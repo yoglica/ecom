@@ -1,0 +1,6 @@
+.description-editor .ql-editor{
+  min-height: 250px !important;
+  padding: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+}
