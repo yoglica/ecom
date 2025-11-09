@@ -16,7 +16,11 @@ export default function LoginPage() {
       await signInWithEmailAndPassword(auth, email, password);
       router.push("/");
     } catch (err) {
-      alert(err.message);
+      if (err instanceof Error) {
+        alert(err.message);
+      } else {
+        alert(String(err));
+      }
     }
   };
 
